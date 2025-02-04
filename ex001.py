@@ -1,2 +1,13 @@
-msg = 'Hello World!'
+cores = {
+    'limpa': '\033[m',
+    'branco': '\033[30m',
+    'vermelho': '\033[31m',
+    'verde': '\033[32m',
+    'amarelo': '\033[33m',
+    'azul': '\033[34m',
+    'roxo': '\033[35m',
+    'ciano': '\033[36m',
+    'cinza': '\033[37m',
+}
+msg = '{}Hello World!{}'.format(cores['vermelho'], cores['limpa'])
 print(msg)
